@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.min.css"}
+{"version":3,"sources":["../sass/components/_customer-reviews.scss","../sass/utils/_variables.scss"],"names":[],"mappings":"AACI,mCACI,wBCWW,CDVX,eAAA,CACA,gBAAA,CACA,aAAA,CAEJ,wBACI,mBCQM,CDPN,eAAA,CACA,UAAA,CACA,iBAAA,CACA,cAAA,CACA,gBAAA,CACA,aAAA,CACA,2BAAA,CACA,+CAAA,CAAA,uCAAA,CAGA,0BAAA,CAEA,gCACI,UAAA,CACA,g4CAAA,CAAA,iBAAA,CACA,WAAA,CACA,UAAA,CACA,UAAA,CACA,WAAA","file":"main.min.css"}

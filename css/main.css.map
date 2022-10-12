@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sources":["../sass/components/_customer-reviews.scss","../sass/utils/_variables.scss","main.css"],"names":[],"mappings":"AACI;EACI,oCCWW;EDVX,gBAAA;EACA,iBAAA;EACA,cAAA;AEAR;AFEI;EACI,oBCQM;EDPN,gBAAA;EACA,mBAAA;EACA,kBAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;EACA,4BAAA;EACA,2DAAA;UAAA,mDAAA;EAGA,4BAAA;AEFR;AFIQ;EACI,WAAA;EACA,i4CAAA;EAA84C,kBAAA;EAC94C,YAAA;EACA,WAAA;EACA,WAAA;EACA,YAAA;AEDZ","file":"main.css"}
