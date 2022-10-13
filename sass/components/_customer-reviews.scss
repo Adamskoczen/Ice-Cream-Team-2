@@ -1,11 +1,61 @@
 .customer-reviews {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    &__img-container {
+        margin: 0 auto 15px;
+    }
+    &__img {
+        width: 85px;
+        height: 85px;
+    }
     &__text-background {
+        position: relative;
         background-color: $lighter-gray;
         min-width: 280px;
+        max-width: calc(480px - 20px - 20px);
         max-height: 308px;
         margin: 0 20px;
+        padding-top: 43px;
+        padding-bottom: 20px;
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../../images/quote.png);
+            background-repeat: no-repeat;
+            top: 25px;
+            left: 55px;
+            height: 100px;
+            width: 100px;
+        }
+        &::after {
+            content: "";
+            background-image: url(../../images/dots.png);
+            position: absolute;
+            bottom: -33px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 7px;
+            background-size: 25px;
+        }
+    }
+    &__paper {
+        margin: auto;
+        padding-left: 7px;
+        padding-right: 16px;
+        width: 62%;
+        background-image: linear-gradient($light-gray 1px, transparent 0px);
+        background-size: 50% 1.95em;
+        background-position-y: 1.5rem;
     }
     &__text {
+        position: relative;
         font-family: $dm-sans;
         font-weight: 500;
         color: $main-black;
@@ -13,19 +63,50 @@
         font-size: 12px;
         line-height: 255%;
         margin: auto 0;
-        padding: 40px 66px 26px 57px;
-        text-decoration: solid underline $light-gray;
-        // text-underline-offset: auto;
-        // text-underline-position: 2px;
-        text-underline-offset: 0.7em;
-        //background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' style='position: absolute; width: 0; height: 0; overflow: hidden;' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath d='M32.014 0c1.929 0 3.75 0.52 5.464 1.561s3.107 2.537 4.179 4.488c1.029 1.951 1.543 4.249 1.543 6.894s-0.643 5.225-1.929 7.74c-0.429 0.911-1.2 2.081-2.314 3.512-1.157 1.431-2.229 2.667-3.214 3.707l-4.050 4.098-2.893-4.813c2.014-1.257 3.793-2.818 5.336-4.683 1.543-1.821 2.314-3.491 2.314-5.008 0-0.78-0.171-1.409-0.514-1.886-1.5 1.084-3.171 1.626-5.014 1.626-1.329 0-2.593-0.412-3.793-1.236-1.243-0.78-2.229-1.821-2.957-3.122-0.771-1.258-1.157-2.558-1.157-3.902 0-1.518 0.45-2.97 1.35-4.358 0.857-1.388 1.993-2.515 3.407-3.382 1.371-0.824 2.786-1.236 4.243-1.236zM8.936 0c1.929 0 3.75 0.52 5.464 1.561s3.107 2.537 4.179 4.488c1.029 1.951 1.543 4.249 1.543 6.894 0 1.864-0.236 3.534-0.707 5.008-0.471 1.518-1.286 3.1-2.443 4.748-1.114 1.561-2.164 2.862-3.15 3.902-0.986 1.084-2.7 2.884-5.143 5.398l-2.893-4.813c2.014-1.257 3.793-2.818 5.336-4.683 1.543-1.821 2.314-3.491 2.314-5.008 0-0.78-0.171-1.409-0.514-1.886-1.5 1.084-3.171 1.626-5.014 1.626-1.329 0-2.593-0.412-3.793-1.236-1.243-0.78-2.229-1.821-2.957-3.122-0.771-1.258-1.157-2.558-1.157-3.902 0-1.518 0.429-2.97 1.286-4.358s1.993-2.515 3.407-3.382c1.371-0.824 2.786-1.236 4.243-1.236z'%3E%3C/path%3E%3C/svg%3E%0A");        
-        &::before {
-            content: "";
-            background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' style='position: absolute; width: 0; height: 0; overflow: hidden;' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath d='M32.014 0c1.929 0 3.75 0.52 5.464 1.561s3.107 2.537 4.179 4.488c1.029 1.951 1.543 4.249 1.543 6.894s-0.643 5.225-1.929 7.74c-0.429 0.911-1.2 2.081-2.314 3.512-1.157 1.431-2.229 2.667-3.214 3.707l-4.050 4.098-2.893-4.813c2.014-1.257 3.793-2.818 5.336-4.683 1.543-1.821 2.314-3.491 2.314-5.008 0-0.78-0.171-1.409-0.514-1.886-1.5 1.084-3.171 1.626-5.014 1.626-1.329 0-2.593-0.412-3.793-1.236-1.243-0.78-2.229-1.821-2.957-3.122-0.771-1.258-1.157-2.558-1.157-3.902 0-1.518 0.45-2.97 1.35-4.358 0.857-1.388 1.993-2.515 3.407-3.382 1.371-0.824 2.786-1.236 4.243-1.236zM8.936 0c1.929 0 3.75 0.52 5.464 1.561s3.107 2.537 4.179 4.488c1.029 1.951 1.543 4.249 1.543 6.894 0 1.864-0.236 3.534-0.707 5.008-0.471 1.518-1.286 3.1-2.443 4.748-1.114 1.561-2.164 2.862-3.15 3.902-0.986 1.084-2.7 2.884-5.143 5.398l-2.893-4.813c2.014-1.257 3.793-2.818 5.336-4.683 1.543-1.821 2.314-3.491 2.314-5.008 0-0.78-0.171-1.409-0.514-1.886-1.5 1.084-3.171 1.626-5.014 1.626-1.329 0-2.593-0.412-3.793-1.236-1.243-0.78-2.229-1.821-2.957-3.122-0.771-1.258-1.157-2.558-1.157-3.902 0-1.518 0.429-2.97 1.286-4.358s1.993-2.515 3.407-3.382c1.371-0.824 2.786-1.236 4.243-1.236z'%3E%3C/path%3E%3C/svg%3E%0A");            position: relative;
-            bottom: 10px;
-            right: 10px;
-            width: 20px;
-            height: 20px;
+    }
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) {
+    .customer-reviews {
+        &__text-background {
+            max-width: calc(1000px - 74px - 74px);
+            margin: 0 74px;
+            &::before {
+                left: 80px;
+            }
+        }
+        &__paper {
+            padding-left: 20px;
+            padding-right: 44px;
+            width: 80%;
+            background-size: 50% 2.05em;
+            background-position-y: 1.52rem;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 216%;
+        }
+    }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1280px) {
+    .customer-reviews {
+        &__text-background {
+            margin: 0 176px 0 178px;
+            max-width: calc(1280px - 178px - 176px);
+        }
+        &__paper {
+            padding-left: 28px;
+            padding-right: 35px;
+            background-position-y: 1.6rem;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 186%;
         }
     }
 }

@@ -22,12 +22,24 @@
       <section class="advantages"></section>
       <section class="section gallery"></section>
       <section class="section customer-reviews">
-        <div class="customer-reviews__img"></div>
+        <div class="customer-reviews__img-container">
+          <img
+            class="customer-reviews__img"
+            srcset="
+              ./images/customer-1@2x.jpg  480w,
+              ./images/customer-1@2x.jpg  768w,
+              ./images/customer-1.jpg    1280w
+            "
+            alt="Emily, Los Angeles"
+          />
+        </div>
         <div class="customer-reviews__text-background">
-          <p class="customer-reviews__text">
-            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-          </p>
+          <div class="customer-reviews__paper">
+            <p class="customer-reviews__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
         </div>
         <h3 class="customer-reviews__title"></h3>
         <div class="customer-reviews__dots-menu">
