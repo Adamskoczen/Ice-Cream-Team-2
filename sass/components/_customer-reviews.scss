@@ -1,4 +1,5 @@
 .customer-reviews {
+    font-family: $dm-sans;
     max-width: 1280px;
     display: flex;
     flex-direction: column;
@@ -56,13 +57,31 @@
     }
     &__text {
         position: relative;
-        font-family: $dm-sans;
         font-weight: 500;
         color: $main-black;
         text-align: center;
         font-size: 12px;
         line-height: 255%;
         margin: auto 0;
+    }
+    &__title {
+        font-size: 14px;
+        line-height: 186%;
+        color: $main-black;
+        text-align: center;
+        margin-top: 52px;
+        margin-bottom: 30px;
+    }
+    &__dots-menu {
+        display: flex;
+        margin: 0 auto;
+    }
+    &__dot {
+        background-color: $main-gray;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin: 0 9px;
     }
 }
 
@@ -94,6 +113,11 @@
             font-size: 14px;
             line-height: 216%;
         }
+        &__title {
+            font-size: 16px;
+            margin-top: 42px;
+            margin-bottom: 35px;
+        }
     }
 }
 
@@ -114,11 +138,15 @@
         &__paper {
             padding-left: 28px;
             padding-right: 35px;
-            background-position-y: 1.6rem;
+            background-position-y: 1.59rem;
         }
         &__text {
             font-size: 16px;
             line-height: 186%;
+        }
+        &__title {
+            font-size: 20px;
+            margin-top: 34px;
         }
     }
 }
