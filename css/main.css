@@ -36,7 +36,7 @@
 .customer-reviews__text-background::before {
   position: absolute;
   content: "";
-  background-image: url(../../images/quote.png);
+  background-image: url(.././images/quote.png);
   background-repeat: no-repeat;
   top: 25px;
   left: 55px;
@@ -84,6 +84,9 @@
   .customer-reviews__text-background::before {
     left: 80px;
   }
+  .customer-reviews__text-background__after {
+    bottom: -27px;
+  }
   .customer-reviews__paper {
     padding-left: 20px;
     padding-right: 44px;
@@ -100,6 +103,9 @@
   .customer-reviews__text-background {
     margin: 0 176px 0 178px;
     max-width: 926px;
+  }
+  .customer-reviews__text-background__after {
+    bottom: -18px;
   }
   .customer-reviews__paper {
     padding-left: 28px;
