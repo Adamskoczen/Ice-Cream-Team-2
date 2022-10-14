@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     &__img-container {
-        margin: 0 auto 15px;
+        margin: 0 auto 29px;
     }
     &__img {
         width: 85px;
@@ -70,6 +70,9 @@
 
 @media screen and (min-width: 768px) {
     .customer-reviews {
+        &__img-container {
+            margin-bottom: 19px;
+        }
         &__text-background {
             max-width: calc(1000px - 74px - 74px);
             margin: 0 74px;
@@ -98,6 +101,9 @@
 
 @media screen and (min-width: 1280px) {
     .customer-reviews {
+        &__img-container {
+            margin-bottom: 15px;
+        }
         &__text-background {
             margin: 0 176px 0 178px;
             max-width: calc(1280px - 178px - 176px);
