@@ -76,7 +76,7 @@
             &::before {
                 left: 80px;
             }
-            &__after {
+            &::after {
                 bottom: -27px;
             }
         }
@@ -101,10 +101,10 @@
         &__text-background {
             margin: 0 176px 0 178px;
             max-width: calc(1280px - 178px - 176px);
-            &__after {
+            &::after {
                 bottom: -18px;
             }
-            }
+        }
         &__paper {
             padding-left: 28px;
             padding-right: 35px;
